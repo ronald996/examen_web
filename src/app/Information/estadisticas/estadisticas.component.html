@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="cotainer titulo">
+        <h1>Estadisticas Populares</h1>
+    </div>
+    <div class="datos">
+        <div class="bloque1"> <!--Precio-->
+            <h4>Precio del Mercado (USD)</h4>
+            <ul *ngFor="let pre of precio; let last1 = last;">
+                <li *ngIf="last1">${{pre.y | number: '1.2-2'}}</li>
+            </ul>
+            <p>Precio medio de mercado en USD a través de intercambios importantes de bitcoins.</p>
+        </div>
+
+        <div class="bloque2"> <!--bloque size-->
+            <h4>Tamaño bloque promedio</h4>
+            <ul *ngFor="let blo of bloque; let last1 = last;">
+                <li *ngIf="last1">{{blo.y | number: '1.2-2'}}</li>
+            </ul>
+            <p>El tamaño de bloque promedio de 24 horas en MB.</p>
+        </div>
+
+        <div class="bloque3"> <!--Transacciones-->
+            <h4>Trasacciones por día</h4>
+            <ul *ngFor="let tran of transaciones; let last1 = last;">
+                <li *ngIf="last1">{{tran.y | number: '2.0'}}</li>
+            </ul>
+            <p>El numero total de transacciones Bitcoin confirmados en las últimas 24 horas.</p>
+        </div>
+
+        <div class="bloque4"> <!--Mempool-->
+            <h4>Tamaño Mempool</h4>
+            <ul *ngFor="let mem of mempool_size; let last1 = last;">
+                <li *ngIf="last1">{{mem.y | number: '3.2'}}</li>
+            </ul>
+            <p>El tamaño total de las operaciones a la espera de ser confirmada.</p>
+        </div>  
+    </div>
+</div>

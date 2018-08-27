@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+.footers{
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(133, 184, 247);
+    display: flex;
+    justify-content: center;
+}
+
+.footers .datos{
+    display: flex;
+}
+
+.footers .datos .derechos{
+    padding: 15px;
+    text-align: center;
+}
+
+.footers .datos .autores{
+    padding: 15px;
+    text-align: center;
+}

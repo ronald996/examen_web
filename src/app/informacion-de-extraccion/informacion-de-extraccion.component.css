@@ -1,0 +1,44 @@
+#grafic {
+  margin-top: 40px;
+}
+#container {
+  text-align: center;
+  margin-top: 60px;
+  /*margin: 0 auto 4px auto;*/
+}
+div#info-container {
+    background:rgba(155, 131, 131, 0.733);
+    width: 70%;
+    margin: 0 auto 4px auto;
+   /* margin-top: 4px;*/
+    padding: 1em;
+    box-shadow: 1px 1px 0 lightgrey;
+  }
+  
+  span.left {
+    font-weight: bold;
+  }
+  
+  span.right {
+    float:right;
+  }
+  
+  .tit1{
+    margin-top: 4px;
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    
+  }
+
+  .tit2{
+    margin-top: 4px;
+    float:right;
+    width: 38%;
+  }
+
+  h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }

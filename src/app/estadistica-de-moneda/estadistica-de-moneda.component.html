@@ -1,0 +1,131 @@
+<div class="container" style="background-color: rgb(224, 224, 224); width: 73%;">
+    <div class="container datos">
+        <div class="titulo">
+            <h1>Estadísticas Monetarias</h1>
+        </div>
+        <div class="description">
+            <p>Resumen de estadísticas de Bitcoin para el periodo de 24 horas anterior.</p>
+        </div>
+    </div>
+  <!--BLOCK SUMMARY-->
+    <div style="display: flex;">
+        <div class="col-md-6 pln">
+            <!-- Needs Translation --><h3 class="upper mb-25 center-tablet mt-40">Block Summary</h3><!-- Needs Translation -->
+            <table class="table table-striped">
+                <tbody><tr>
+                    <td class="titulos2" width="50%">Bloques Minados</td>
+                    <td colspan="5" id="n_blocks_mined">{{info.n_blocks_mined}}</td>
+                    <td class="hidden-xs"></td>
+                </tr>
+                <tr>
+                    <td class="titulos2">Tiempo entre Bloques</td>
+                    <td colspan="5"><span id="minutes_between_blocks">{{info.minutes_between_blocks}}</span> minutos</td>
+                    <td class="hidden-xs"></td>
+                </tr>
+                <tr>
+                    <td class="titulos2">Bitcoins Minados</td>
+                    <td colspan="5" id="n_btc_mined">{{info.n_btc_mined}} BTC</td>
+                    <td class="hidden-xs"></td>
+                </tr>
+            </tbody></table>
+        </div>
+
+        <!--Resumen de mercado-->
+        <div class="col-md-6 prn" style="float: right;">
+            <h3 class="upper mb-25 center-tablet mt-40">Resumen del Mercado</h3>
+            <table class="table table-striped">
+            <tbody><tr>
+                <td class="titulos2" width="50%">Precio de Mercado</td>
+                <td colspan="5" id="market_price_usd">${{info.market_price_usd}}</td>
+                <td class="hidden-xs"></td>
+            </tr>
+            <tr>
+                <td class="titulos2">Volumen de Intercambio</td>
+                <td colspan="5" id="trade_volume_usd">${{info.trade_volume_usd}}</td>
+                <td class="hidden-xs"></td>
+            </tr>
+            <tr>
+                <td class="titulos2">Volumen de Intercambio</td>
+                <td colspan="5" id="trade_volume_btc">{{info.trade_volume_btc}} BTC</td>
+                <td class="hidden-xs"></td>
+            </tr>
+            </tbody></table>
+        </div>
+    </div>
+
+  <!--Transaction Summary-->
+  <div class="col-md-12 phn">
+      <!-- Needs Translation --><h3 class="upper mb-25 center-tablet mt-40">Transaction Summary</h3><!-- Needs Translation -->
+      <table class="table table-striped">
+        <tbody><tr>
+            <td class="titulos2" width="45%">Comisiones Totales de Transacción (BTC)</td>
+            <td id="total_fees_btc">{{info.total_fees_btc}} BTC</td>
+            <td class="hidden-xs"></td>
+        </tr>
+        <tr>
+            <td class="titulos2">Número de Transacciones</td>
+            <td id="n_tx">{{info.n_tx}}</td>
+            <td class="hidden-xs"></td>
+        </tr>
+        <tr>
+            <td class="titulos2">Volumen de Salida Total (BTC)</td>
+            <td id="total_btc_sent">{{info.total_btc_sent}} BTC</td>
+            <td class="hidden-xs"></td>
+        </tr>
+        <tr>
+            <td class="titulos2">Volumen de Transacciones Estimado (BTC)</td>
+            <td id="estimated_btc_sent">{{info.estimated_btc_sent}} BTC</td>
+            <td class="hidden-xs"></td>
+        </tr>
+        <tr>
+            <td class="titulos2">Volumen de Transacciones Estimado (USD)</td>
+            <td> <span id="estimated_transaction_volume_usd">${{info.estimated_transaction_volume_usd}}</span></td>
+            <td class="hidden-xs"></td>
+        </tr>
+      </tbody></table>
+    </div>
+
+    <!--Coste de la Minería-->
+    <div class="col-md-12 phn">
+        <h3 class="upper mb-25 center-tablet mt-40">Coste de la Minería</h3><table class="table table-striped">
+          
+          <tbody><tr>
+              <td class="titulos2" width="45%">Beneficios Totales de los Mineros (USD)</td>
+              <td id="miners_revenue_usd">${{info.miners_revenue_usd}}</td>
+              <td class="hidden-xs"></td>
+          </tr>
+          <tr>
+              <td class="titulos2">% obtenido de las Comisiones por Transacciones</td>
+              <td id="miners_revenue_percent_fees">{{info.miners_revenue_percent_fees}}%</td>
+              <td class="hidden-xs"></td>
+          </tr>
+          <tr>
+              <td class="titulos2">% del Volumen de Transacciones</td>
+              <td id="miners_revenue_percent_volume">{{info.miners_revenue_percent_volume}}%</td>
+              <td class="hidden-xs"></td>
+          </tr>
+          <tr>
+              <td class="titulos2">Coste por Transacción (USD)</td>
+              <td id="miners_cost_per_tx">${{info.miners_cost_per_tx}}</td>
+              <td class="hidden-xs"></td>
+          </tr>
+        </tbody></table>
+      </div>
+
+  <!--Tasa de Hash y Consumo Energético-->
+  <div class="col-md-12 phn">
+      <h3 class="upper mb-25 center-tablet mt-40">Tasa de Hash y Consumo Energético</h3>
+      <table class="table table-striped">
+        <tbody><tr>
+            <td class="titulos2" width="45%">Dificultad</td>
+            <td id="difficulty">{{info.difficulty}}</td>
+            <td class="hidden-xs"></td>
+        </tr>
+        <tr>
+            <td class="titulos2">Tasa de Hash</td>
+            <td id="hash_rate">{{info.hash_rate}} GH/s</td>
+            <td class="hidden-xs"></td>
+        </tr>
+      </tbody></table>
+    </div>
+</div>

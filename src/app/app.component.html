@@ -1,0 +1,34 @@
+<header class="titulo">
+        <div class="header">
+            <h1>Gráficos de Bitcoin</h1>
+        </div>
+        <div class="description">
+            <p>La fuente más confiable de datos sobre la cadena de bloques bitcoin.</p>
+        </div>
+</header>
+<div class="container">
+    <div class="menu" style="background-color: rgb(186, 213, 245);"> 
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+            <a routerLink="/EstadisticaPopular" class="nav-link">Estadística Populares</a>
+            </li>
+            <li class="nav-item">
+            <a routerLink="/EstadisticaMoneda" class="nav-link">Estadística de Moneda</a>
+            </li>
+            <li class="nav-item">
+            <a routerLink="/InformacionExtraccion" class="nav-link">Información de Extracción</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<router-outlet></router-outlet>
+
+<!--
+<nav>
+    <a routerLink="/EstadisticaPopular">Estadistica Populares</a>
+    <br>
+    <a routerLink="/EstadisticaMoneda">Estadistica de Moneda</a>
+    <br>
+    <a routerLink="/InformacionExtraccion">Información de Extracción</a>
+</nav>
+<router-outlet></router-outlet>-->

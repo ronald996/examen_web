@@ -1,0 +1,28 @@
+.container .datos{
+    padding: 30px;
+    width: 100%;
+    margin: auto;
+    background-color: transparent;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container .datos .titulo h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.1em;
+}
+
+.container .datos .description p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+.upper{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: navy;
+}
+
+.titulos2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

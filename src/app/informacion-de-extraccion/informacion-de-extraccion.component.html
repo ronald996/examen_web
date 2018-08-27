@@ -1,0 +1,23 @@
+<div id= "grafic" style="display: block;">
+    <canvas baseChart
+            [data]="pieChartData"
+            [labels]="pieChartLabels"
+            [chartType]="pieChartType"
+          ></canvas>
+</div>
+
+<div id="container">
+  <h2>Bloques Conocidos</h2>
+</div>
+<div *ngIf="datos">
+  <div id="container">
+    <h3 class="tit1">Resuelto por</h3>
+    <h3 class="tit2">Conteo</h3>
+  </div>
+  <div id="info-container" *ngFor="let info of objectKeys(datos)">    
+    <span class="left">{{ info }}</span>
+    <span class="right">{{ datos[info]}}</span>
+  </div>
+</div>
+
+
